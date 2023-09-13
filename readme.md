@@ -44,13 +44,23 @@ El objetivo de este desafío es crear una API REST que permita realizar las sigu
 
 # Instalación
 
-| Clonar Repositorio e Instalar dependencias                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">1.</span> #clonar repositorio</h6>                                                                                            |
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">2.</span> #git clone [https://github.com/ToniVaz/challenge_ticmas.git](https://github.com/ToniVaz/challenge_ticmas.git) </h6> |
+### 1.Clonar repositorio
 
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">3.</span> <span style="color: blue">cd</span> challenge_ticmas</h6>
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">4.</span> npm install</h6>
+```
+git clone https://github.com/ToniVaz/challenge_ticmas.git
+```
+
+### 2.Navegar a la carpeta
+
+```
+cd  challenge_ticmas
+```
+
+### 3.Instalar dependencias
+
+```
+npm install
+```
 
 ---
 
