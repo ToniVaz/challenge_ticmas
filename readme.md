@@ -48,8 +48,9 @@ El objetivo de este desafío es crear una API REST que permita realizar las sigu
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">1.</span> #clonar repositorio</h6>                                                                                            |
 | <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">2.</span> #git clone [https://github.com/ToniVaz/challenge_ticmas.git](https://github.com/ToniVaz/challenge_ticmas.git) </h6> |
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">3.</span> <span style="color: blue">cd</span> challenge_ticmas</h6> |
-| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">4.</span> npm install</h6> |
+
+| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">3.</span> <span style="color: blue">cd</span> challenge_ticmas</h6>
+| <h6 style="font-family: 'Courier New', monospace;"><span style="color: red">4.</span> npm install</h6>
 
 ---
 
@@ -112,12 +113,6 @@ curl --request GET \
   --url http://localhost:3000/task \
   --header 'Content-Type: application/json' \
   --header 'User-Agent: insomnia/2023.5.8' \
-  --data '{
-	"title": "NEW TASK",
-			"description": "TASK DESCRIPTION",
-			"status": "COMPLETE",
-			"user": "USER"
-             }'
 ```
 
 - Esta solicitud GET permite obtener la lista de todas las tareas.
@@ -131,12 +126,6 @@ curl --request GET \
   --url http://localhost:3000/task/65020220a1d6f142271ea3bd \
   --header 'Content-Type: application/json' \
   --header 'User-Agent: insomnia/2023.5.8' \
-  --data '{
-	"title": "NEW TASK",
-			"description": "TASK DESCRIPTION",
-			"status": "COMPLETE",
-			"user": "USER"
-            }'
 ```
 
 - Esta solicitud GET permite obtener una tarea específica por su ID.
@@ -169,12 +158,6 @@ curl --request DELETE \
   --url http://localhost:3000/task/64ffb5f785eebb07e7d2b3cd \
   --header 'Content-Type: application/json' \
   --header 'User-Agent: insomnia/2023.5.8' \
-  --data '{
-	"title": "NEW TASK",
-			"description": "TASK DESCRIPTION",
-			"status": "COMPLETE",
-			"user": "USER"
-            }'
 ```
 
 - Esta solicitud DELETE permite eliminar una tarea específica por su ID.
@@ -188,12 +171,6 @@ curl --request GET \
   --url http://localhost:3000/task/filter/COMPLETE \
   --header 'Content-Type: application/json' \
   --header 'User-Agent: insomnia/2023.5.8' \
-  --data '{
-	"title": "NEW TASK",
-			"description": "TASK DESCRIPTION",
-			"status": "COMPLETE",
-			"user": "USER"
-            }'
 ```
 
 - Esta solicitud GET permite obtener todas las tareas que coinsidan con un STATUS específico.
@@ -207,14 +184,6 @@ curl --request GET \
   --url http://localhost:3000/task/days_passed/650207e2a1d6f142271ea3cf \
   --header 'Content-Type: application/json' \
   --header 'User-Agent: insomnia/2023.5.8' \
-  --data '{
-
-			"title": "NEW TASK",
-			"description": "TASK DESCRIPTION",
-			"status": "COMPLETE",
-			"user": "USER",
-			"date": "2023-04-13T18:52:11.806Z"
-            }'
 ```
 
 - Esta solicitud GET permite obtener la cantidad de días transcurridos desde la creación de una tarea.
